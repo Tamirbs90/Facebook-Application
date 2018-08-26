@@ -1,0 +1,8 @@
+C:\Users\Tamir\Desktop\design 3\AppLogic\obj\Debug\AppLogic.csprojResolveAssemblyReference.cache
+C:\Users\Tamir\Desktop\design 3\AppLogic\bin\Debug\AppLogic.dll.config
+C:\Users\Tamir\Desktop\design 3\AppLogic\bin\Debug\AppLogic.dll
+C:\Users\Tamir\Desktop\design 3\AppLogic\bin\Debug\AppLogic.pdb
+C:\Users\Tamir\Desktop\design 3\AppLogic\bin\Debug\Facebook.dll
+C:\Users\Tamir\Desktop\design 3\AppLogic\bin\Debug\FbGraphApiWrapper.dll
+C:\Users\Tamir\Desktop\design 3\AppLogic\obj\Debug\AppLogic.dll
+C:\Users\Tamir\Desktop\design 3\AppLogic\obj\Debug\AppLogic.pdb

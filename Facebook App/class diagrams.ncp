@@ -1,0 +1,275 @@
+<Project>
+  <Name>Untitled</Name>
+  <ProjectItem type="NClass.DiagramEditor.ClassDiagram.Diagram" assembly="NClass.DiagramEditor, Version=2.4.1823.0, Culture=neutral, PublicKeyToken=null">
+    <Name>command</Name>
+    <Language>CSharp</Language>
+    <Entities>
+      <Entity type="Class">
+        <Name>AppUI</Name>
+        <Access>Public</Access>
+        <Location left="186" top="166" />
+        <Size width="192" height="169" />
+        <Collapsed>False</Collapsed>
+        <Member type="Method">private void login()</Member>
+        <Member type="Method">private void fetchLikesPerFriendList()</Member>
+        <Member type="Method">private void fetchFirstLikersToPics()</Member>
+        <Member type="Method">private void fetchAlbums()</Member>
+        <Member type="Method">private void fetchFriends()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Operation</Name>
+        <Access>Public</Access>
+        <Location left="452" top="166" />
+        <Size width="191" height="114" />
+        <Collapsed>False</Collapsed>
+        <Member type="Property">public Action Command { get; set; }</Member>
+        <Member type="Method">public void Execute()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Comment">
+        <Text>Command.Invoke()</Text>
+        <Location left="687" top="255" />
+        <Size width="160" height="50" />
+      </Entity>
+      <Entity type="Comment">
+        <Text>Command as Pointer to function. Holds one of AppUI operations. </Text>
+        <Location left="771" top="147" />
+        <Size width="160" height="75" />
+      </Entity>
+      <Entity type="Comment">
+        <Text>Client
+</Text>
+        <Location left="151" top="79" />
+        <Size width="50" height="50" />
+      </Entity>
+      <Entity type="Comment">
+        <Text>Invoker</Text>
+        <Location left="661" top="97" />
+        <Size width="60" height="50" />
+      </Entity>
+    </Entities>
+    <Relationships>
+      <Relationship type="Association" first="0" second="1">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <StartMultiplicity>1</StartMultiplicity>
+        <EndMultiplicity>0..*</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="1" second="0">
+        <Label>
+        </Label>
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+      </Relationship>
+      <Relationship type="Dependency" first="1" second="0">
+        <Label>
+        </Label>
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+      </Relationship>
+      <Relationship type="Comment" first="2" second="1">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="False">
+          <X>678</X>
+          <Y>261</Y>
+        </BendPoint>
+      </Relationship>
+      <Relationship type="Comment" first="3" second="1">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="False">
+          <X>668</X>
+          <Y>239</Y>
+        </BendPoint>
+      </Relationship>
+      <Relationship type="Comment" first="4" second="0">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="False">
+          <X>161</X>
+          <Y>193</Y>
+        </BendPoint>
+      </Relationship>
+      <Relationship type="Comment" first="5" second="1">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="False">
+          <X>689</X>
+          <Y>192</Y>
+        </BendPoint>
+      </Relationship>
+    </Relationships>
+  </ProjectItem>
+  <ProjectItem type="NClass.DiagramEditor.ClassDiagram.Diagram" assembly="NClass.DiagramEditor, Version=2.4.1823.0, Culture=neutral, PublicKeyToken=null">
+    <Name>Iterator</Name>
+    <Language>CSharp</Language>
+    <Entities>
+      <Entity type="Class">
+        <Name>LikesPerFriendBuilder</Name>
+        <Access>Public</Access>
+        <Location left="159" top="324" />
+        <Size width="205" height="100" />
+        <Collapsed>False</Collapsed>
+        <Member type="Method">public IEnumerator GetEnumerator()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Interface">
+        <Name>IEnumerable</Name>
+        <Access>Public</Access>
+        <Location left="159" top="188" />
+        <Size width="191" height="81" />
+        <Collapsed>False</Collapsed>
+        <Member type="Method">IEnumerator GetEnumerator()</Member>
+      </Entity>
+      <Entity type="Class">
+        <Name>LikesPerFriendIterator</Name>
+        <Access>Public</Access>
+        <Location left="651" top="338" />
+        <Size width="220" height="119" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">LikesPerFriendBulilder m_Collection</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Interface">
+        <Name>IEnumerator</Name>
+        <Access>Public</Access>
+        <Location left="719" top="172" />
+        <Size width="179" height="112" />
+        <Collapsed>False</Collapsed>
+        <Member type="Method">bool MoveNext()</Member>
+        <Member type="Method">object CurrentItem()</Member>
+        <Member type="Method">void Reset()</Member>
+      </Entity>
+      <Entity type="Class">
+        <Name>ApplicationLogic</Name>
+        <Access>Public</Access>
+        <Location left="459" top="172" />
+        <Size width="162" height="105" />
+        <Collapsed>False</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Comment">
+        <Text>return new LikesPerFriendIterator(this)
+</Text>
+        <Location left="423" top="433" />
+        <Size width="160" height="75" />
+      </Entity>
+      <Entity type="Class">
+        <Name>ListBox</Name>
+        <Access>Public</Access>
+        <Location left="459" top="33" />
+        <Size width="162" height="86" />
+        <Collapsed>False</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Comment">
+        <Text>Client
+</Text>
+        <Location left="748" top="40" />
+        <Size width="59" height="50" />
+      </Entity>
+    </Entities>
+    <Relationships>
+      <Relationship type="Realization" first="0" second="1">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+      </Relationship>
+      <Relationship type="Realization" first="2" second="3">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+      </Relationship>
+      <Relationship type="Association" first="0" second="2">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>398</X>
+          <Y>353</Y>
+        </BendPoint>
+        <BendPoint relativeToStartShape="False">
+          <X>623</X>
+          <Y>353</Y>
+        </BendPoint>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+      </Relationship>
+      <Relationship type="Association" first="2" second="0">
+        <Label>
+        </Label>
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>621</X>
+          <Y>403</Y>
+        </BendPoint>
+        <BendPoint relativeToStartShape="False">
+          <X>396</X>
+          <Y>378</Y>
+        </BendPoint>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Aggregation</AssociationType>
+        <StartMultiplicity>1</StartMultiplicity>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Comment" first="5" second="0">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>392</X>
+          <Y>451</Y>
+        </BendPoint>
+        <BendPoint relativeToStartShape="False">
+          <X>392</X>
+          <Y>415</Y>
+        </BendPoint>
+      </Relationship>
+      <Relationship type="Association" first="4" second="0">
+        <Label>
+        </Label>
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="False">
+          <X>399</X>
+          <Y>338</Y>
+        </BendPoint>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Composition</AssociationType>
+        <StartMultiplicity>1</StartMultiplicity>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="6" second="3">
+        <Label>
+        </Label>
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+      </Relationship>
+      <Relationship type="Association" first="6" second="1">
+        <Label>
+        </Label>
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>420</X>
+          <Y>77</Y>
+        </BendPoint>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+      </Relationship>
+      <Relationship type="Comment" first="7" second="6">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>721</X>
+          <Y>52</Y>
+        </BendPoint>
+      </Relationship>
+    </Relationships>
+  </ProjectItem>
+</Project>

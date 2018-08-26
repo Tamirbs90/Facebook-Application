@@ -1,0 +1,13 @@
+C:\Users\Tamir\Desktop\design 3\AppUI\bin\Debug\DP-EX1.exe.config
+C:\Users\Tamir\Desktop\design 3\AppUI\obj\Debug\AppUI.csprojResolveAssemblyReference.cache
+C:\Users\Tamir\Desktop\design 3\AppUI\obj\Debug\DP_EX1.AppUI.resources
+C:\Users\Tamir\Desktop\design 3\AppUI\obj\Debug\DP_EX1.Properties.Resources.resources
+C:\Users\Tamir\Desktop\design 3\AppUI\obj\Debug\AppUI.csproj.GenerateResource.Cache
+C:\Users\Tamir\Desktop\design 3\AppUI\bin\Debug\DP-EX1.exe
+C:\Users\Tamir\Desktop\design 3\AppUI\bin\Debug\DP-EX1.pdb
+C:\Users\Tamir\Desktop\design 3\AppUI\bin\Debug\AppLogic.dll
+C:\Users\Tamir\Desktop\design 3\AppUI\bin\Debug\Facebook.dll
+C:\Users\Tamir\Desktop\design 3\AppUI\bin\Debug\FbGraphApiWrapper.dll
+C:\Users\Tamir\Desktop\design 3\AppUI\bin\Debug\AppLogic.pdb
+C:\Users\Tamir\Desktop\design 3\AppUI\obj\Debug\DP-EX1.exe
+C:\Users\Tamir\Desktop\design 3\AppUI\obj\Debug\DP-EX1.pdb
